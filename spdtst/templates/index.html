@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for ('static', filename='css/rp_gui.css') }}"/>
+        <script src="{{ url_for ('static', filename='js/spdtst.js') }}" charset="utf-8"></script>
+        
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    </head>
+    <script>
+    </script>
+<body style="background-color: #82e4f5;">
+<script>
+	window.onload=function() {
+	}
+</script>
+        
+    </body>
+	<h3><p id="pTarget"></p></h3>
+<!-- Running on {_ target _} -->
+    <table style="background-color: #8ec7eb;width:100%">
+        <tr>
+            <td style="border:none;">
+                <input type="button" value="Measure Speed" onclick="onMeasureSpeedClick()">
+            </td>
+            <td id="cellSignal" width="80%">
+                <div id="chartSignal" style="resize:both;overflow:auto;"></div>
+            </td>
+</tr>
+    </table>
+    </html>
